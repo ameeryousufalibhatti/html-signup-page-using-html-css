@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ University</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 25px 25px auto;
+            border: 3px solid grey;
+            background-color: rgb(239, 241, 213);
+            padding: 50px;
+        }
+        #cont{
+            text-align: center;
+        }
+        body{
+            font-family: cursive;
+            font-style: italic;
+            background-color: rgb(240, 240, 149);
+            font-size: small;
+        }
+        h3{
+            font-size: x-large;
+            float: both;
+        }
+        .inputs{
+            height: 25px;
+            width: 250px;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+        .inp{
+            border-radius: 10px;
+            font-family: cursive;
+            width: 700px;
+            height: 100px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            float: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="cont">
+            <img src="logo.png" alt="logo">
+            <h3>Sign up for XYZ Univeristy</h3>
+            <p>Create free account or <a href="login.com">login</a></p>
+            <form action="backend.php">
+                <p>Name <input type="text" class="inputs"></p>
+                <p>Father Name <input type="text" class="inputs"></p>
+                <p>Email <input type="email" class="inputs"></p>
+                <p>Phone Number <input type="tel" name="phone" class="inputs"></p>
+                <p>Gender 
+                    <label for="gender">
+                        <input type="radio" name="gender">
+                        Male
+                        <input type="radio" name="gender">
+                        Female
+                        <input type="radio" name="gender">
+                        Not Specified
+                    </label>
+                </p>
+                <p>Age <input type="number" class="inputs"> </p>
+                <p>Marks in FS.C <input type="text" class="inputs"></p>
+                <p>Department <select name="depart" class="inputs">
+                    <option value="depart">Comuter Science</option>
+                </select> </p>
+                <p>Degree <select name="degree" class="inputs">
+                    <option value="degree">BS computer Science</option>
+                    <option value="degree">BS Software Engineering</option>
+                    <option value="degree">BS Artifical Intelligence</option>
+                </select></p>
+                <p>
+                    Why this degree? 
+                    <div>
+                        <textarea name="why" cols="100" rows="10" class="inp"></textarea>
+                </div>
+                </p>
+                <p><input type="checkbox"> I declared that all the above information is accurate and will be verifired after admisson and the required document must be submitted to university!</p>
+                <hr><br>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset Now">
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
